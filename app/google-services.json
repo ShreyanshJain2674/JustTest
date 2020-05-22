@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "569534924917",
+    "firebase_url": "https://navigationdrawer-c1277.firebaseio.com",
+    "project_id": "navigationdrawer-c1277",
+    "storage_bucket": "navigationdrawer-c1277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569534924917:android:d1b5afcbafc793c47a503c",
+        "android_client_info": {
+          "package_name": "com.codewithshreya.justtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569534924917-lebtvfo1f2mo8j5vrktidedi7cb6nujv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_iIAEvf5qSjwiAFilKGTy2rAILti2UgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569534924917-lebtvfo1f2mo8j5vrktidedi7cb6nujv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
