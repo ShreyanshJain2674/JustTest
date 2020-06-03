@@ -66,7 +66,7 @@ public class Main6Activity extends AppCompatActivity {
     private void viewAll2(){
         list = new ArrayList<>();
         ref = FirebaseDatabase.getInstance().getReference("Final Roll").child(dep.getText().toString());
-        databaseReference.addChildEventListener(new ChildEventListener() {
+        ref.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 final String headertitile = dataSnapshot.getKey();
