@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -73,6 +74,7 @@ public class Main4Activity extends AppCompatActivity {
                 }
             }
         });
+
 
         done.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,5 +159,10 @@ public class Main4Activity extends AppCompatActivity {
 
             }
         });
+    }
+    public void It2(View v){
+        firebaseAuth.signOut();
+        finish();
+        startActivity(new Intent(Main4Activity.this,MainActivity.class));
     }
 }

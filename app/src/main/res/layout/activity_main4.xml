@@ -51,6 +51,7 @@
         android:id="@+id/palo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="It2"
         android:layout_centerHorizontal="true"
         android:text="LogOut" />
     </RelativeLayout>
