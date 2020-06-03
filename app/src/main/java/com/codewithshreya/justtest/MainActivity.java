@@ -40,8 +40,16 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(MainActivity.this,Main4Activity.class));
+                            if (Email.getText().toString().trim().equals("admin@gmail.com")){
+                                startActivity(new Intent(MainActivity.this,Main4Activity.class));
+                            }else if (Email.getText().toString().equals("admin2@gmail.com")){
+                                startActivity(new Intent(MainActivity.this,Main5Activity.class));
+                            }else if (Email.getText().toString().equals("admin3@gmail.com")){
+                                startActivity(new Intent(MainActivity.this,Main6Activity.class));
+                            }else {
+                                Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(MainActivity.this,Main3Activity.class));
+                            }
                         }else {
                             Toast.makeText(MainActivity.this,"UnSuccessfull",Toast.LENGTH_SHORT).show();
                         }
