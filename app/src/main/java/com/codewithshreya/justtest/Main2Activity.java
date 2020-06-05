@@ -39,9 +39,9 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Email.getText().toString().isEmpty()){
                     Email.setError("Required Field");
-                }if (Email.getText().toString().trim().length() < 5){
+                }else if (Email.getText().toString().trim().length() < 5){
                     Email.setError("Enter Valid Roll No");
-                }if (pass.getText().toString().trim().length() < 6){
+                }else if (pass.getText().toString().trim().length() < 6){
                     pass.setError("Password Length must be 6");
                 }else {
                     final String mail = Email.getText().toString().trim() + "@nith.ac.in";

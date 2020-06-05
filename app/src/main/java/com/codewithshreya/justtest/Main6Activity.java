@@ -35,7 +35,7 @@ public class Main6Activity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference,ref;
     List<String> list;
-    String[] uploads2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +72,7 @@ public class Main6Activity extends AppCompatActivity {
                 final String headertitile = dataSnapshot.getKey();
                 list.add(headertitile);
 
-                uploads2 = new String[list.size()];
+                String[] uploads2 = new String[list.size()];
 
                 for(int i=0; i<uploads2.length;i++){
                     uploads2[i] = list.get(i);

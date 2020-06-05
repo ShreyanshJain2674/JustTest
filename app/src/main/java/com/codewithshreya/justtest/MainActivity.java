@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             if (Email.getText().toString().trim().equals("admin@gmail.com")){
                                 startActivity(new Intent(MainActivity.this,Main4Activity.class));
-                            }else if (Email.getText().toString().equals("admin2@gmail.com")){
-                                startActivity(new Intent(MainActivity.this,Main5Activity.class));
                             }else if (Email.getText().toString().equals("admin3@gmail.com")){
                                 startActivity(new Intent(MainActivity.this,Main6Activity.class));
                             }else {
